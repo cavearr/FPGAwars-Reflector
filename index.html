@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Reflector - FPGAwars</title>
+    <link rel="stylesheet" href="css/loading.min.css">
+    <link rel="stylesheet" href="css/ldbtn.min.css">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <div id="logo">
+      <img src="assets/fpgawars.png" />
+    </div>
+    <div id="text-connections">
+      <p>Reflector is a broadcast gateway, like MQTT but simple and powerfull. Connect your hardware devices with UARTs and communicate easily with internet applications accross websockets.</p>
+    </div>
+    <div id="connections">
+      <div id="connections-serial">
+        <p>UART reflector</p>
+        <label class="label-lg">Device:</label><select id="serial-devices" class="select-lg"></select>
+
+        <div id="serial-connect" class="btn ld-ext-right"><span id="serial-connect-label">Connect</span><div class="ld ld-ring ld-spin" style="color:#fff"></div></div>
+
+      </div>
+      <div id="connections-ws">
+        <p>WebSocket reflector</p>
+        <label class="label-lg">Port:</label><input type="text" id="ws-port" class="input-lg" value="9999"/>
+
+        <div id="ws-connect" class="btn ld-ext-right"><span id="ws-connect-label">Connect</span><div class="ld ld-ring ld-spin" style="color:#fff"></div></div>
+        <div id="network-interfaces-list"></div>
+      </div>
+    </div>
+    <div id="event-bus"></div>
+    <input type="text" id="manual-cmd" placeholder="Send your commands" />
+    <button id="manual-cmd-btn">Send your command</button>
+
+    <script src="js/vendor/sweetalert2.min.js"></script>
+    <script src="sha1.js"></script>
+    <script src="http.js"></script>
+    <script src="js/likeJQueryButFast.js"></script>
+    <script src="js/SerialManager.js"></script>
+    <script src="js/LOVEFPGABus.js"></script>
+    <script src="js/Reflector.js"></script>
+    <script src="index.js"></script>
+
+  </body>
+</html>

@@ -1,0 +1,22 @@
+{
+  "name": "FPGAwars-Reflector",
+  "description": "Websocket and UART broadcast gateway",
+  "version": "0.0.1",
+  "manifest_version": 2,
+  "permissions": ["serial"],
+  "sockets": {
+    "tcp": {
+      "connect": "*"
+    },
+
+    "tcpServer": {
+      "listen": "*"
+    }
+  },
+  
+  "app": {
+    "background": {
+      "scripts": ["background.js"]
+    }
+  }
+}
