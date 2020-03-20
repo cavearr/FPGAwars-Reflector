@@ -10,7 +10,9 @@ Now is very early version with many bugs and very little error control, we are e
 
 The first objective of this app is connecting with LOVE FPGA blocks.
 
-You can find some examples at this project.
+You can find some examples at this project 
+
+https://github.com/FPGAwars/LOVE-FPGA/
 
 
 ## Installation
