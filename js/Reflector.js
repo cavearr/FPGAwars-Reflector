@@ -154,8 +154,13 @@ var Reflector = function (port) {
         socket.addEventListener(
           "message",
           function (e) {
-            for (let i = 0; i < this.wss.connectedSockets.length; i++)
+            for (let i = 0; i < this.wss.connectedSockets.length; i++){
               this.wss.connectedSockets[i].send(e.data);
+            }
+            //Broadcast for all UARTs
+            if(this.isUARTConnected()){
+              this.serial.sm.write(e.data);
+            }
           }.bind(this)
         );
 
