@@ -15,6 +15,8 @@ You can find some examples at this project
 https://github.com/FPGAwars/LOVE-FPGA/
 
 
+
+
 ## Installation
 
 Install Reflector as a chrome extension.
@@ -28,6 +30,8 @@ To install it:
 2) In chrome browser go to url chrome://extensions
 
 3) Click on the button "Load from source" or in spanish "Cargar descomprimida", and select the folder with Reflector.
+
+
 
 
 ## Run
